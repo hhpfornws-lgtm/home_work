@@ -1,0 +1,32 @@
+Bài 2: 
+
+SELECT Name, Email
+FROM Customers;
+
+SELECT *
+FROM Customers
+WHERE City IN ('Hanoi', 'Hue');
+
+SELECT *
+FROM Customers
+WHERE Name LIKE 'C%E'; 
+
+SELECT TOP 5 Name
+FROM Customers
+ORDER BY Name ASC;
+
+SELECT TOP 10 *
+FROM Products
+ORDER BY Price DESC;
+
+SELECT COUNT(*) AS SoSanPham
+FROM Products
+WHERE Price > 500;
+
+SELECT AVG (Price) AS GiaTrungBinh
+FROM Products
+WHERE Category = 'Electronics';
+
+SELECT TOP 1 *
+FROM Orders
+ORDER BY OrderDate DESC;
