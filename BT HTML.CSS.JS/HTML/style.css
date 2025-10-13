@@ -1,0 +1,211 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Toàn trang */
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #ccf6ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Phần giới thiệu */
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.name {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 2px solid #0073e6;
+    margin: 15px 0;
+}
+
+.about {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Phần nội dung chính */
+section {
+    padding: 20px 60px;
+}
+
+h2 {
+    color: #2c2c2c;
+    border-bottom: 2px solid #0073e6;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+/* ==============================
+   PHẦN SỞ THÍCH (HOBBIES)
+============================== */
+.hobbies ul {
+    list-style-type: none;     
+    padding: 0;
+    margin-top: 15px;
+}
+
+.hobbies li {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+    width: 100%;                
+}
+/* Bảng thông tin học tập */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   FORM LIÊN HỆ
+================================ */
+.contact-form {
+    width: 500px;                 
+    margin: 60px auto;            
+    padding: 20px;
+    background-color: #fff;       
+    border-radius: 8px;           
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+}
+
+/* Tiêu đề form */
+.contact-form h1 {
+    text-align: center;
+    color: #007bff;               /* màu xanh chủ đạo */
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+/* Label (nhãn nhập liệu) */
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Các ô input và textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Textarea lớn hơn input */
+.contact-form textarea {
+    height: 100px;
+    resize: none;                  /* không cho kéo to nhỏ */
+}
+
+/* Radio & Checkbox để cách đều nhau */
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Nút gửi và xóa */
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.contact-form input[type="reset"] {
+    background-color: #555;        /* nút xám khác biệt */
+}
+
+/* Hiệu ứng hover */
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-form input[type="reset"]:hover {
+    background-color: #333;
+}
