@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="https://newwave.vn/wp-content/themes/nwstheme/assets/images/logo-nws.png" alt="Logo NWS" class="logo">
+        <nav class="nav">
+            <a href="introduce.html" class="nav-link">Giới thiệu</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+        </nav>
+    </header>
+
+    <!-- Form liên hệ -->
+    <section class="contact-form">
+        <h1 class="contact-title">Form Liên hệ</h1>
+        <form action="#" method="post">
+        <!--có cũng được, nhưng nếu hoạt động như 1 form thật nên có-->
+            <label for="fullname">Họ tên:</label><br>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Nội dung liên hệ:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <label>Giới tính:</label><br>
+            <input type="radio" id="male" name="gender" value="Nam"> Nam
+            <input type="radio" id="female" name="gender" value="Nữ"> Nữ<br><br>
+
+            <label>Sở thích:</label><br>
+            <input type="checkbox" name="hobby" value="Đọc sách"> Đọc sách
+            <input type="checkbox" name="hobby" value="Âm nhạc"> Âm nhạc
+            <input type="checkbox" name="hobby" value="Thể thao"> Thể thao<br><br>
+
+            <label for="city">Thành phố:</label><br>
+            <select id="city" name="city">
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                <option value="Đà Nẵng">Đà Nẵng</option>
+            </select><br><br>
+
+            <input type="submit" value="Gửi">
+            <input type="reset" value="Xóa">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+        <p>Bản quyền © 2025 – Hoàng Thị Hà Phương</p>
+    </footer>
+</body>
+</html>
