@@ -35,33 +35,3 @@ public class MatchCheck {
     }
 }
 
-/**
- * Lớp Person được định nghĩa ở đây.
- * Lỗi "Cannot resolve symbol" xảy ra vì bạn thiếu định nghĩa này trong file.
- * Chúng ta bỏ "public" để nó có thể nằm chung file với "public class MatchCheck".
- */
-class Person {
-    String name;
-    int age;
-
-    // Constructor
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    // Getter
-    public int getAge() {
-        return age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    // Giúp in danh sách ra cho đẹp
-    @Override
-    public String toString() {
-        return name + "(" + age + ")";
-    }
-}
